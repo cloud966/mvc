@@ -26,9 +26,9 @@ class Control{
         const bod = document.querySelector("body");
         const one = new Data("sifu","racoon",5);
         const get = new Creation();
-        console.log(get.create())
-        get.create().innerText = "Good"
-        bod.appendChild(get.create());
+        const h = get.create();
+        h.innerText = `${one.name}`
+        bod.appendChild(h);
     };
 };
 
